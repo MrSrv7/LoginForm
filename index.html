@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Login Form</title>
+
+		<!-- Script for using Font Awesome Icons (if the following inclusion doesn't work for you, change as per your project UI. You can visit "https://kit.fontawesome.com/" to get your own font-awesome kit ) -->
+		<script src="https://kit.fontawesome.com/eef0cdff75.js" crossorigin="anonymous"></script>
+
+		<!--Tachyons and MaterializeCSS CSS ToolKits-->
+		<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+		<!-- Our Own Customized CSS -->
+		<link rel="stylesheet" href="./style.css" />
+
+	</head>
+	
+	<body>
+
+		<div id="login" class="center pa4">
+
+			<div class="row transparent ba shadow-5 ">
+
+				<div class="col s12">
+					
+						<h1 class="pb4 grow " > Login  </h1> 
+						
+							<form action="#!" class="pb4">
+
+								<div class="col s12">
+
+									<div class="input-field inline">
+
+										<i class="far fa-envelope prefix pr4" style="color: gold;margin-top: 3px;"></i>
+										<input type="email" onkeyup="setTimeout(emailcheck, 1000)" id="email" name="email" placeholder="someone@example.com" autocomplete="off" required="true" />
+										<label for="email" > <span> Enter E-Mail ID </span></label>
+
+										<div class="red-text" id="emailerr"style="display: none;">
+											Please Enter Valid Email Address  <!--Error Message if the Entered E-Mail doesn't meet our standards-->
+										</div>
+
+									</div>
+
+									<div class="input-field inline">
+
+										<i class="fas fa-lock prefix pr4" style="color: gold;margin-top: 3px;"></i>
+										<input type="password" name="password" id="password" required="true" />
+										<label for="password"> <span > Enter Password </span></label>
+
+									</div>
+
+									<div class="col s12">
+										<label class="kbox">
+											<input type="checkbox" class="filled-in"/>
+											<span class="chec">Remember Me</span>
+										  </label>
+									</div>
+
+								</div>
+
+								<button type="submit" class=" grow btn black-text mt4" style="background-color : gold">Submit <i class="pl2 far fa-paper-plane fa-lg "></i> </button>
+							
+							</form>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Scripts for initiating jQuery and Materialize -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		
+		<!-- Our Own customized JS -->
+		<script src="script.js"></script>
+		
+	</body>
+
+</html>

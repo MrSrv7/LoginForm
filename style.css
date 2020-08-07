@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+
+body{
+
+	background-color: #222;
+	font-family: 'Ubuntu';
+}
+
+[type="checkbox"]:checked+span:not(.lever):before{ 
+
+	top:-4px; 
+	left:-5px;
+	width:12px;
+	height:22px;
+	border-top:2px solid transparent; 
+	border-left:2px solid transparent;
+	border-right:2px solid gold;
+	border-bottom:2px solid gold;	
+	-webkit-transform:rotate(40deg);	
+	transform:rotate(40deg); 
+	-webkit-backface-visibility:hidden; 
+	backface-visibility:hidden;	
+	-webkit-transform-origin:100% 100%;
+	transform-origin:100% 100%;
+} 
+
+[type="checkbox"].filled-in:checked+span:not(.lever):before{
+
+	border-right:2px solid gold;
+	border-bottom:2px solid gold;
+	
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):after{
+	
+	border:2px solid gold;
+	background-color:black;
+}
+
+[type="checkbox"].filled-in.tabbed:checked:focus+span:not(.lever):after{
+	
+	background-color:black;
+	border-color:black;
+}
+
+
+input[type=password]:not(.browser-default):focus:not([readonly]),input[type=email]:not(.browser-default):focus:not([readonly]){
+	border-bottom:1px solid gold;
+	-webkit-box-shadow:0 1px 0 0 gold;
+	box-shadow:0 1px 0 0 gold;
+}
+
+.ba{
+
+	border-color: rgba(0, 0, 0, 0.2);
+}
+
+h1{
+		
+		text-transform: uppercase;
+		font-weight: 900;
+		background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+	}
+
+.shadow-5{
+
+	padding: 10px;
+	width: 500px;
+}
+
+
+#login{
+
+	position: absolute;
+	margin: -100px 0 0 -200px;
+    top: 35%;
+    left: 45%;
+}
+
+label span, input{
+
+	color: gold	;
+}
+
+#emailerr {
+
+	font-weight: 900;
+}
